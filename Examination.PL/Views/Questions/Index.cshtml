@@ -1,0 +1,52 @@
+﻿@model IEnumerable<Examination.BL.ViewModels.QuestionVM>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Add New Question</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+               QuestionId
+            </th>
+            <th>
+                 QuestionText
+            </th>
+            <th>
+                 QuestionType
+            </th>
+            <th>
+                Mark
+            </th>
+            <th>
+                 ExamId
+            </th>
+            <th>Details</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+             <td>@item.QuestionId</td>
+             <td>@item.QuestionText</td>
+             <td>@item.QuestionTypeName</td>
+             <td>@item.Mark</td>
+                
+             <td>@item.ExamId</td>
+            
+            <td><a class="btn btn-primary" asp-controller="Questions" asp-action="Details" asp-route-id="@item.QuestionId">Details</a></td>
+            <td><a class="btn btn-warning" asp-controller="Questions" asp-action="Edit" asp-route-id="@item.QuestionId">Edit</a></td>
+            <td><a class="btn btn-danger" asp-controller="Questions" asp-action="Delete" asp-route-id="@item.QuestionId">Delete</a></td>
+
+        </tr>
+}
+    </tbody>
+</table>

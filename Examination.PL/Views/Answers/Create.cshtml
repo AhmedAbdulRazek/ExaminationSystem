@@ -1,0 +1,43 @@
+﻿@model Examination.BL.ViewModels.CreateAnswerVM
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ProvidedAnswer" class="control-label"></label>
+                <input asp-for="ProvidedAnswer" class="form-control" />
+                <span asp-validation-for="ProvidedAnswer" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="IsCorrect" /> @Html.DisplayNameFor(model => model.IsCorrect)
+                </label>
+            </div>
+            
+            <div class="form-group  mt-2">
+                <label asp-for="QuestionId">Question</label>
+                <select asp-for="QuestionId" class="form-control" asp-items="(SelectList)ViewBag.QuestionList"></select>
+            </div>
+            <div class="form-group  mt-2">
+                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="reset" value="Reset" class="btn btn-danger" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" class="btn btn-warning mt-2">Back To Home</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

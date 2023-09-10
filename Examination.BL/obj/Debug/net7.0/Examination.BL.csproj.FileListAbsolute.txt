@@ -1,0 +1,15 @@
+G:\Company Tasks\Examination System\Examination.BL\bin\Debug\net7.0\Examination.BL.deps.json
+G:\Company Tasks\Examination System\Examination.BL\bin\Debug\net7.0\Examination.BL.dll
+G:\Company Tasks\Examination System\Examination.BL\bin\Debug\net7.0\Examination.BL.pdb
+G:\Company Tasks\Examination System\Examination.BL\bin\Debug\net7.0\Examination.DAL.dll
+G:\Company Tasks\Examination System\Examination.BL\bin\Debug\net7.0\Examination.DAL.pdb
+G:\Company Tasks\Examination System\Examination.BL\obj\Debug\net7.0\Examination.BL.csproj.AssemblyReference.cache
+G:\Company Tasks\Examination System\Examination.BL\obj\Debug\net7.0\Examination.BL.GeneratedMSBuildEditorConfig.editorconfig
+G:\Company Tasks\Examination System\Examination.BL\obj\Debug\net7.0\Examination.BL.AssemblyInfoInputs.cache
+G:\Company Tasks\Examination System\Examination.BL\obj\Debug\net7.0\Examination.BL.AssemblyInfo.cs
+G:\Company Tasks\Examination System\Examination.BL\obj\Debug\net7.0\Examination.BL.csproj.CoreCompileInputs.cache
+G:\Company Tasks\Examination System\Examination.BL\obj\Debug\net7.0\Examination.BL.csproj.CopyComplete
+G:\Company Tasks\Examination System\Examination.BL\obj\Debug\net7.0\Examination.BL.dll
+G:\Company Tasks\Examination System\Examination.BL\obj\Debug\net7.0\refint\Examination.BL.dll
+G:\Company Tasks\Examination System\Examination.BL\obj\Debug\net7.0\Examination.BL.pdb
+G:\Company Tasks\Examination System\Examination.BL\obj\Debug\net7.0\ref\Examination.BL.dll

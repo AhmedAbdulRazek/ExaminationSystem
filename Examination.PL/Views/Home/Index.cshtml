@@ -1,0 +1,48 @@
+﻿@model IEnumerable<Examination.BL.ViewModels.QuestionVM>
+
+<h3 class="control-label">
+    Take The Exam
+</h3>
+
+@using (Html.BeginForm())
+{
+    <span class="col-md-6">
+
+        @Html.DropDownList("ExamId", (SelectList)@ViewBag.ExamsList, htmlAttributes: new { @class = "form-control" })
+    </span>
+
+
+    <p class="form-group mt-2">
+
+        <input type="submit" value="Questions By Exam" class="btn btn-primary" />
+
+    </p>
+
+}
+
+
+@foreach (var item in Model)
+    {
+        <div>
+            <h3>
+                @Html.DisplayFor(modelItem => item.QuestionText)
+            </h3>
+
+        @if(@item.QuestionTypeName == "TrueOrFalse")
+        {
+            @foreach (var ans in item.Answers)
+            {
+                <input type="radio" name="@ans.AnswerId" value="@ans.AnswerId"> @ans.ProvidedAnswer
+            }
+        }else
+        {
+            @foreach (var ans in item.Answers)
+            {
+                <p>@ans.ProvidedAnswer</p>
+            }
+        }
+
+
+            
+        </div>
+    }
