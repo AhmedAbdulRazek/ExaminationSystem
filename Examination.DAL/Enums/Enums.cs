@@ -8,7 +8,7 @@ namespace Examination.DAL.Enums
 {
     public class Enums
     {
-        public enum QuestionTypee
+        public enum QuestionsTypes
         {
             MultipleChoice,
             TrueOrFalse,

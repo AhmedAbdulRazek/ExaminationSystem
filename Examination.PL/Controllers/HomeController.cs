@@ -37,7 +37,7 @@ namespace Examination.PL.Controllers
 
         [HttpPost]
         //public ActionResult Index(QuestionVM question)
-        public ActionResult Index(int ExamId, List<AnswerVM> answers)
+        public ActionResult Index(int ExamId,[FromForm] List<AnswerVM> answers)
         {
 
 

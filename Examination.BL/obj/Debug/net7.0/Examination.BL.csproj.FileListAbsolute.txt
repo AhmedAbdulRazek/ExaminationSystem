@@ -13,3 +13,18 @@ G:\Company Tasks\Examination System\Examination.BL\obj\Debug\net7.0\Examination.
 G:\Company Tasks\Examination System\Examination.BL\obj\Debug\net7.0\refint\Examination.BL.dll
 G:\Company Tasks\Examination System\Examination.BL\obj\Debug\net7.0\Examination.BL.pdb
 G:\Company Tasks\Examination System\Examination.BL\obj\Debug\net7.0\ref\Examination.BL.dll
+H:\Github\Examination System\Examination.BL\bin\Debug\net7.0\Examination.BL.deps.json
+H:\Github\Examination System\Examination.BL\bin\Debug\net7.0\Examination.BL.dll
+H:\Github\Examination System\Examination.BL\bin\Debug\net7.0\Examination.BL.pdb
+H:\Github\Examination System\Examination.BL\bin\Debug\net7.0\Examination.DAL.dll
+H:\Github\Examination System\Examination.BL\bin\Debug\net7.0\Examination.DAL.pdb
+H:\Github\Examination System\Examination.BL\obj\Debug\net7.0\Examination.BL.csproj.AssemblyReference.cache
+H:\Github\Examination System\Examination.BL\obj\Debug\net7.0\Examination.BL.GeneratedMSBuildEditorConfig.editorconfig
+H:\Github\Examination System\Examination.BL\obj\Debug\net7.0\Examination.BL.AssemblyInfoInputs.cache
+H:\Github\Examination System\Examination.BL\obj\Debug\net7.0\Examination.BL.AssemblyInfo.cs
+H:\Github\Examination System\Examination.BL\obj\Debug\net7.0\Examination.BL.csproj.CoreCompileInputs.cache
+H:\Github\Examination System\Examination.BL\obj\Debug\net7.0\Examination.BL.csproj.CopyComplete
+H:\Github\Examination System\Examination.BL\obj\Debug\net7.0\Examination.BL.dll
+H:\Github\Examination System\Examination.BL\obj\Debug\net7.0\refint\Examination.BL.dll
+H:\Github\Examination System\Examination.BL\obj\Debug\net7.0\Examination.BL.pdb
+H:\Github\Examination System\Examination.BL\obj\Debug\net7.0\ref\Examination.BL.dll

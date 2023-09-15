@@ -3409,11 +3409,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\Company Tasks\\Examination System\\Examination.BL\\Examination.BL.csproj",
+      "projectUniqueName": "H:\\Github\\Examination System\\Examination.BL\\Examination.BL.csproj",
       "projectName": "Examination.BL",
-      "projectPath": "G:\\Company Tasks\\Examination System\\Examination.BL\\Examination.BL.csproj",
+      "projectPath": "H:\\Github\\Examination System\\Examination.BL\\Examination.BL.csproj",
       "packagesPath": "C:\\Users\\Ahmed\\.nuget\\packages\\",
-      "outputPath": "G:\\Company Tasks\\Examination System\\Examination.BL\\obj\\",
+      "outputPath": "H:\\Github\\Examination System\\Examination.BL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3430,8 +3430,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "G:\\Company Tasks\\Examination System\\Examination.DAL\\Examination.DAL.csproj": {
-              "projectPath": "G:\\Company Tasks\\Examination System\\Examination.DAL\\Examination.DAL.csproj"
+            "H:\\Github\\Examination System\\Examination.DAL\\Examination.DAL.csproj": {
+              "projectPath": "H:\\Github\\Examination System\\Examination.DAL\\Examination.DAL.csproj"
             }
           }
         }

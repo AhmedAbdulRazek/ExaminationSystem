@@ -12,3 +12,17 @@ G:\Company Tasks\Examination System\Examination.DAL\obj\Debug\net7.0\refint\Exam
 G:\Company Tasks\Examination System\Examination.DAL\obj\Debug\net7.0\Examination.DAL.pdb
 G:\Company Tasks\Examination System\Examination.DAL\obj\Debug\net7.0\Examination.DAL.genruntimeconfig.cache
 G:\Company Tasks\Examination System\Examination.DAL\obj\Debug\net7.0\ref\Examination.DAL.dll
+H:\Github\Examination System\Examination.DAL\bin\Debug\net7.0\Examination.DAL.deps.json
+H:\Github\Examination System\Examination.DAL\bin\Debug\net7.0\Examination.DAL.runtimeconfig.json
+H:\Github\Examination System\Examination.DAL\bin\Debug\net7.0\Examination.DAL.dll
+H:\Github\Examination System\Examination.DAL\bin\Debug\net7.0\Examination.DAL.pdb
+H:\Github\Examination System\Examination.DAL\obj\Debug\net7.0\Examination.DAL.csproj.AssemblyReference.cache
+H:\Github\Examination System\Examination.DAL\obj\Debug\net7.0\Examination.DAL.GeneratedMSBuildEditorConfig.editorconfig
+H:\Github\Examination System\Examination.DAL\obj\Debug\net7.0\Examination.DAL.AssemblyInfoInputs.cache
+H:\Github\Examination System\Examination.DAL\obj\Debug\net7.0\Examination.DAL.AssemblyInfo.cs
+H:\Github\Examination System\Examination.DAL\obj\Debug\net7.0\Examination.DAL.csproj.CoreCompileInputs.cache
+H:\Github\Examination System\Examination.DAL\obj\Debug\net7.0\Examination.DAL.dll
+H:\Github\Examination System\Examination.DAL\obj\Debug\net7.0\refint\Examination.DAL.dll
+H:\Github\Examination System\Examination.DAL\obj\Debug\net7.0\Examination.DAL.pdb
+H:\Github\Examination System\Examination.DAL\obj\Debug\net7.0\Examination.DAL.genruntimeconfig.cache
+H:\Github\Examination System\Examination.DAL\obj\Debug\net7.0\ref\Examination.DAL.dll

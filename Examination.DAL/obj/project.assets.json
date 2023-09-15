@@ -3641,11 +3641,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\Company Tasks\\Examination System\\Examination.DAL\\Examination.DAL.csproj",
+      "projectUniqueName": "H:\\Github\\Examination System\\Examination.DAL\\Examination.DAL.csproj",
       "projectName": "Examination.DAL",
-      "projectPath": "G:\\Company Tasks\\Examination System\\Examination.DAL\\Examination.DAL.csproj",
+      "projectPath": "H:\\Github\\Examination System\\Examination.DAL\\Examination.DAL.csproj",
       "packagesPath": "C:\\Users\\Ahmed\\.nuget\\packages\\",
-      "outputPath": "G:\\Company Tasks\\Examination System\\Examination.DAL\\obj\\",
+      "outputPath": "H:\\Github\\Examination System\\Examination.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
