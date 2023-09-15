@@ -17,7 +17,8 @@ namespace Examination.BL.ViewModels
 
         public int QuestionId { get; set; }
         public string QuestionText { get; set; }
-
+        public int? SelectedAnswerId { get; set; }
+        public List<int>? SelectedAnswerIds { get; set; }
 
 
     }

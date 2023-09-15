@@ -2,41 +2,9 @@
 @using static Examination.DAL.Enums.Enums;
 
 <h3 class="control-label">
-    Take The Exam
+    Answer All Questions
 </h3>
-@*
-@using (Html.BeginForm())
-{
-    <span class="col-md-6">
 
-        @Html.DropDownList("ExamId", (SelectList)@ViewBag.ExamsList, htmlAttributes: new { @class = "form-control" })
-    </span>
-
-
-    <p class="form-group mt-2">
-
-        <input type="submit" value="Questions By Exam" class="btn btn-primary" />
-
-    </p>
-
-}*@
-
-@*<form asp-action="Index" class="col-md-6 my-1 p-2">
-    <div class="row">
-        <div class="form-group d-flex align-items-center justify-content-center">
-
-            <select name="ExamId" value="ExamId" class="form-control my-2" asp-items="(SelectList)ViewBag.ExamsList">
-                <option value="" selected disabled>Exam</option>
-                
-            </select>
-
-            <input type="submit" value="Questions By Exam" class="btn btn-primary mx-2" />
-        </div>
-
-
-
-    </div>
-</form>*@
 
 <form asp-action="Index">
     @foreach (var item in Model)

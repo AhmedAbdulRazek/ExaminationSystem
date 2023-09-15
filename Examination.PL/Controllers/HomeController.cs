@@ -20,14 +20,13 @@ namespace Examination.PL.Controllers
         }
 
         [HttpGet]
-        public IActionResult Index()
+        public IActionResult AllExams()
         {
 
             try
             {
-                ViewBag.ExamsList = new SelectList(examRepo.GetAll(), "Id", "Subject");
-                var questions = questionRepo.GetQuestionsByFirstExamID();
-                return View(questions);
+                var exams = examRepo.GetAll();
+                return View(exams);
             }
             catch (Exception ex)
             {
@@ -35,21 +34,43 @@ namespace Examination.PL.Controllers
             }
         }
 
+
+        [HttpGet]
+        public IActionResult Index(int id)
+        {
+
+            //try
+            //{
+            //    ViewBag.ExamsList = new SelectList(examRepo.GetAll(), "Id", "Subject");
+            //    var questions = questionRepo.GetQuestionsByFirstExamID();
+            //    return View(questions);
+            //}
+            //catch (Exception ex)
+            //{
+            //    return View(ex.Message);
+            //}
+
+
+            var questions = questionRepo.GetQuestionsByExamID(id);
+            return View(questions);
+        }
+
         [HttpPost]
         //public ActionResult Index(QuestionVM question)
-        public ActionResult Index(int ExamId,[FromForm] List<AnswerVM> answers)
+        public ActionResult Index(List<AnswerVM> answers)
         {
 
 
-            ViewBag.ExamsList = new SelectList(examRepo.GetAll(), "Id", "Subject");
+            //ViewBag.ExamsList = new SelectList(examRepo.GetAll(), "Id", "Subject");
 
 
-            var questions = questionRepo.GetQuestionsByFirstExamID();
-            if (ExamId > 0)
-                questions = questionRepo.GetQuestionsByExamID(ExamId);
+            //var questions = questionRepo.GetQuestionsByFirstExamID();
+            //if (ExamId > 0)
+            //    questions = questionRepo.GetQuestionsByExamID(ExamId);
 
 
-            return View(questions);
+            //return View(questions);
+            return View();
         }
 
     }
