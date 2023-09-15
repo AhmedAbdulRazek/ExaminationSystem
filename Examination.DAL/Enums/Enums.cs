@@ -13,6 +13,7 @@ namespace Examination.DAL.Enums
             MultipleChoice,
             TrueOrFalse,
             FillInTheBlank,
+            ChooseOne,
             Essay
         }
 

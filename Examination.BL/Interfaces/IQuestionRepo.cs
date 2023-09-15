@@ -14,7 +14,7 @@ namespace Examination.BL.Interfaces
         void Create(CreateQuestionVM question);
 
         void Edit(QuestionVM question);
-        
+        IEnumerable<QuestionVM> GetQuestionsByFirstExamID();
         IEnumerable<QuestionVM> GetQuestionsByExamID(int id);
         void Delete(int id);
 

@@ -43,7 +43,53 @@ namespace Examination.BL.Repository
             return questionsVM;
         }
 
-        
+        public IEnumerable<QuestionVM> GetQuestionsByFirstExamID()
+        {
+
+            var exam = context.Exams.Include(e => e.Questions).FirstOrDefault();
+
+            var questions = context.Questions.Include(t => t.QuestionType).Include(s => s.Answers)
+                .Where(q => q.ExamId == exam.Id)
+                .ToList();
+
+
+
+            var questionVMS = new List<QuestionVM>();
+            foreach (var item in questions)
+            {
+                var AnswersVMS = new List<AnswerVM>();
+                foreach (var quest in item.Answers)
+                {
+                    var ans = new AnswerVM()
+                    {
+                        AnswerId = quest.AnswerId,
+                        ProvidedAnswer = quest.ProvidedAnswer,
+                        IsCorrect = quest.IsCorrect,
+                        QuestionId = quest.QuestionId
+                    };
+
+                    AnswersVMS.Add(ans);
+
+
+                }
+
+                var questionVM = new QuestionVM()
+                {
+                    QuestionId = item.QuestionId,
+                    QuestionText = item.QuestionText,
+                    Mark = item.Mark,
+                    QuestionTypeId = item.QuestionTypeId,
+                    QuestionTypeName = item.QuestionType.Type,
+                    ExamId = item.ExamId,
+                    Answers = AnswersVMS
+                };
+
+                questionVMS.Add(questionVM);
+            }
+
+            return questionVMS;
+
+        }
         public IEnumerable<QuestionVM> GetQuestionsByExamID(int id)
         {
             var questionsVM = context.Questions.Include(t => t.QuestionType).Include(s => s.Answers)

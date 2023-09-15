@@ -1,9 +1,10 @@
 ﻿@model IEnumerable<Examination.BL.ViewModels.QuestionVM>
+@using static Examination.DAL.Enums.Enums;
 
 <h3 class="control-label">
     Take The Exam
 </h3>
-
+@*
 @using (Html.BeginForm())
 {
     <span class="col-md-6">
@@ -18,31 +19,56 @@
 
     </p>
 
-}
+}*@
+
+<form asp-action="Index" class="col-md-6 my-1 p-2">
+    <div class="row">
+        <div class="form-group d-flex align-items-center justify-content-center">
+
+            <select name="ExamId" value="ExamId" class="form-control my-2" asp-items="(SelectList)ViewBag.ExamsList">
+                <option value="" selected disabled>Exam</option>
+                
+            </select>
+
+            <input type="submit" value="Questions By Exam" class="btn btn-primary mx-2" />
+        </div>
 
 
-@foreach (var item in Model)
-    {
-        <div>
-            <h3>
-                @Html.DisplayFor(modelItem => item.QuestionText)
-            </h3>
 
-        @if(@item.QuestionTypeName == "TrueOrFalse")
+    </div>
+</form>
+
+<form asp-action="Index">
+    @foreach (var item in Model)
         {
+            <div>
+                <h3>
+                    @Html.DisplayFor(modelItem => item.QuestionText)
+                </h3>
+
+
             @foreach (var ans in item.Answers)
             {
-                <input type="radio" name="@ans.AnswerId" value="@ans.AnswerId"> @ans.ProvidedAnswer
+                @if (@item.QuestionTypeName == QuestionsTypes.TrueOrFalse.ToString() || @item.QuestionTypeName == QuestionsTypes.ChooseOne.ToString())
+                {
+                    <input type="radio" name="@ans.QuestionId" value="@ans.AnswerId" /> @ans.ProvidedAnswer
+                    <br />
+                
+                }
+                else if (@item.QuestionTypeName == QuestionsTypes.MultipleChoice.ToString() || @item.QuestionTypeName == QuestionsTypes.FillInTheBlank.ToString())
+                {
+                    <input type="checkbox" name="@ans.AnswerId" value="@ans.AnswerId" /> @ans.ProvidedAnswer
+                    <br />
+                }
+                
+
             }
-        }else
-        {
-            @foreach (var ans in item.Answers)
-            {
-                <p>@ans.ProvidedAnswer</p>
-            }
+
+          
+            
+            </div>
         }
 
+    <input type="submit" value="Send Answers" class="btn btn-primary mx-2" />
 
-            
-        </div>
-    }
+</form>

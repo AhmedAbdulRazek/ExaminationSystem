@@ -2,6 +2,7 @@
 using Examination.BL.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal;
 using System.Diagnostics;
 
 namespace Examination.PL.Controllers
@@ -21,12 +22,11 @@ namespace Examination.PL.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            //ViewBag.ExamsList = new SelectList(examRepo.GetAll(), "Id", "Subject");
-            //return View();
+
             try
             {
                 ViewBag.ExamsList = new SelectList(examRepo.GetAll(), "Id", "Subject");
-                var questions = questionRepo.GetAll();
+                var questions = questionRepo.GetQuestionsByFirstExamID();
                 return View(questions);
             }
             catch (Exception ex)
@@ -36,15 +36,19 @@ namespace Examination.PL.Controllers
         }
 
         [HttpPost]
-        public ActionResult Index(QuestionVM question)
+        //public ActionResult Index(QuestionVM question)
+        public ActionResult Index(int ExamId, List<AnswerVM> answers)
         {
 
 
             ViewBag.ExamsList = new SelectList(examRepo.GetAll(), "Id", "Subject");
 
-            int id = question.ExamId;
 
-            var questions = questionRepo.GetQuestionsByExamID(id);
+            var questions = questionRepo.GetQuestionsByFirstExamID();
+            if (ExamId > 0)
+                questions = questionRepo.GetQuestionsByExamID(ExamId);
+
+
             return View(questions);
         }
 
